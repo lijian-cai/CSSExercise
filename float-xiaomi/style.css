@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-box {
+  background-color: gainsboro;
+  width: 1226px;
+  height: 615px;
+  margin: 100px auto;
+  padding-left: 5px;
+}
+
+.left-box {
+  background-color: gold;
+  width: 234px;
+  height: 615px;
+  float: left;
+}
+
+.right-box {
+  height: 615px;
+  width: 992px;
+  float: right;
+  background-color: pink;
+}
+
+.box {
+  background-color: white;
+  height: 300px;
+  width: 234px;
+  float: left;
+  margin-left: 14px;
+  margin-bottom: 15px;
+}
