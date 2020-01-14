@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  background-color: pink;
+}
+
+.l {
+  left: 0;
+}
+
+.r {
+  right: 0;
+}
+
+.box {
+  position: relative;
+  width: 520px;
+  height: 280px;
+  margin: 100px auto;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+}
+
+.arrow-l,
+.arrow-r {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, .2);
+  top: 50%;
+  transform: translateY(-50%);
+  /* margin-top: -15px; */
+  line-height: 30px;
+  color: white;
+}
+
+.arrow-l {
+  /* border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%; */
+  border-radius: 0 50% 50% 0;
+}
+
+.arrow-r {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  text-align: right;
+}
+
+.arrow-l:hover,
+.arrow-r:hover {
+  background-color:rgba(0, 0, 0, .4);
+}
+
+.circles {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 13px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.circles li {
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin: 3px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+/* 只写current不行, 有权重 */
+.circles .current {
+  background-color: #ff5000;
+}
