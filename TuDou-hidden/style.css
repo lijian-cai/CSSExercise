@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  position: relative;
+  width: 430px;
+  height: 240px;
+  margin: 100px auto;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+}
+
+.mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 430px;
+  height: 240px;
+  background: rgba(0,0,0,.2) url(./play.png) no-repeat center center;
+}
+
+.box a:hover .mask {
+  display: block;
+} 
