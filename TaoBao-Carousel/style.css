@@ -74,6 +74,7 @@
   margin: 3px;
   border-radius: 50%;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 /* 只写current不行, 有权重 */

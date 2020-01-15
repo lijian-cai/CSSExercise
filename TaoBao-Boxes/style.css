@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.box {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 250px;
+  margin-left: -1px;
+  border: solid 1px #e2e0e0;
+}
+
+.bottom-box {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 30%;
+  background-color: #ff4400;
+}
+
+.box:hover {
+  border: solid 1px #ff4400;
+  /* 如果父元素没有定位就不能用z-index, 而要使盒子在最上面显示, 需要给盒子自己用定位, 因为:
+     定位的盒子在最上面, 并且需要占位置, 所以用relative */
+  /* position: relative; */
+  z-index: 10;
+}
+
+.box:hover .bottom-box {
+  display: block;
+}
