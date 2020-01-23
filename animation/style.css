@@ -1,0 +1,86 @@
+body {
+    background-color: #333;
+}
+
+.map {
+    position: relative;
+    width: 747px;
+    height: 617px;
+    background: url(./map.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.city {
+    position: absolute;
+    top: 237px;
+    right: 235px;
+    color: #fff;
+}
+
+.dotted {
+    width: 10px;
+    height: 10px;
+    background-color: #09f;
+    border-radius: 50%;
+}
+
+.city div[class^="pulse"] {
+    /* 保证我们小波纹在父盒子里面水平垂直居中, 放大后就会由中心向四周发散 */
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 12px #009dfd;
+    border-radius: 50%;
+    animation: pulse 1.2s linear infinite;
+}
+
+.city div.pulse2 {
+    animation-delay: .4s;
+}
+
+.city div.pulse3 {
+    animation-delay: .8s;
+}
+
+@keyframes pulse {
+    0% {}
+    70% {
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+    }
+    100% {
+        width: 70px;
+        height: 70px;
+        opacity: 0;
+    }
+}
+
+.bar {
+    width: 0;
+    height: 30px;
+    background-color: pink;
+    animation: bar 4s ease forwards;
+}
+
+.printer {
+    overflow: hidden;
+    width: 0;
+    height: 30px;
+    background-color: red;
+    animation: bar 4s steps(10) forwards;
+    font-size: 20px;
+    color: #fff;
+}
+
+@keyframes bar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 200px;
+    }
+}
