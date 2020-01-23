@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('./fonts/icomoon.eot');
+    src: url('./icomoon.eot?#iefix') format('embedded-opentype'), url('./fonts/icomoon.woff') format('woff'), url('./fonts/icomoon.ttf') format('truetype'), url('./fonts/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.tran {
+    position: relative;
+    width: 249px;
+    height: 35px;
+    border: solid 1px #ccc;
+}
+
+
+/* .tran::after {
+    content: "\ea52";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: 'icomoon';
+} */
+
+.tran::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    width: 10px;
+    height: 10px;
+    border-right: solid 1px #000;
+    border-bottom: solid 1px #000;
+    transform: rotate(45deg);
+    transition: all .3s;
+}
+
+.tran:hover::after {
+    top: 15px;
+    transform: rotate(225deg);
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    border: solid 1px #ccc;
+    overflow: hidden;
+}
+
+.box::before {
+    content: "黑马";
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    transform: rotate(180deg);
+    transform-origin: left bottom;
+    transition: all .4s;
+}
+
+.box:hover::before {
+    transform: rotate(0deg);
+}
