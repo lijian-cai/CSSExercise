@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input {
+    border: 0;
+}
+
+.login-header {
+    width: 250px;
+    margin: 10px auto;
+    font-size: 30px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-header a {
+    text-align: center;
+}
+
+.login {
+    display: none;
+    width: 512px;
+    height: 280px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: solid 1px #ebebeb;
+    box-shadow: 0 0 20px #ddd;
+    z-index: 9999;
+}
+
+.login-title {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.login-title span a {
+    position: absolute;
+    top: -29px;
+    right: -18px;
+    padding: 5px;
+    border-radius: 50%;
+    border: solid 1px #ebebeb;
+    background-color: #fff;
+}
+
+.login-input-content {
+    margin-top: 20px;
+}
+
+.login-button {
+    width: 50%;
+    height: 40px;
+    margin: 30px auto 0 auto;
+    border: solid 1px #ebebeb;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.login-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+}
+
+.login-button a {
+    display: block;
+}
+
+.login-input input.list-input {
+    float: left;
+    height: 35px;
+    width: 350px;
+    border: solid 1px #ebebeb;
+    line-height: 35px;
+    text-indent: 5px;
+}
+
+.login-input {
+    margin: 0 0 20px 0;
+    overflow: hidden;
+}
+
+.login-input label {
+    float: left;
+    width: 90px;
+    height: 35px;
+    padding-right: 10px;
+    text-align: right;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+.login-input span {
+    position: absolute;
+    font-size: 12px;
+    right: -20px;
+    top: -30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: solid 1px #ebebeb;
+}
