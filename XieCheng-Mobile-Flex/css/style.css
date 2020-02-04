@@ -90,11 +90,47 @@ ul {
 }
 
 .focus {
+    position: relative;
     padding-top: 44px;
+    overflow: hidden;
 }
 
 .focus img {
     width: 100%;
+}
+
+.focus ul {
+    width: 500%;
+    /* 清除浮动 */
+    overflow: hidden;
+    /* 显示第二张图片 */
+    margin-left: -100%;
+}
+
+.focus ul li {
+    float: left;
+    width: 20%;
+}
+
+.focus ol {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    margin: 0;
+}
+
+.focus ol li {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #fff;
+    list-style: none;
+    transition: all .3s;
+}
+
+.focus ol li.current {
+    width: 15px;
 }
 
 .local-nav {
