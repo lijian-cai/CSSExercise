@@ -1,4 +1,4 @@
-window.addEventListener('load', function() {
+function carousel() {
     let focus = document.querySelector('.focus')
     let ul = focus.children[0]
     let ol = focus.querySelector('ol')
@@ -68,4 +68,25 @@ window.addEventListener('load', function() {
             ul.style.transform = `translateX(${translatex}px)`;
         }, 2000)
     })
+}
+
+function goback() {
+    let goback = document.querySelector('.goback')
+    let nav = document.querySelector('nav')
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > nav.offsetTop) {
+            goback.style.display = 'block';
+        } else {
+            goback.style.display = 'none';
+
+        }
+    })
+    goback.addEventListener('click', function() {
+        window.scroll(0, 0);
+    })
+}
+
+window.addEventListener('load', function() {
+    carousel();
+    goback();
 })
