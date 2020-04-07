@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  list-style: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 135px;
+  /* color: #fff; */
+}
+
+.header-l {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  height: 135px;
+  font-size: 20px;
+}
+
+/* switch button */
+
+.switch-mode {
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  width: 150px;
+  line-height: 135px;
+  color: rgb(121,128,170);
+  font-size: 14px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  width: 50px;
+  height: 27px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  /* -webkit-transition: .4s; */
+  /* transition: .4s; */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  background-color: rgb(40, 41, 69);
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 27px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.boxes {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.box-hd {
+  overflow: hidden;
+  border: solid 2px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.box-bd {
+  display: flex;
+  height: calc(100% - 4px);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.fb {
+  color: hsl(195, 100%, 50%);
+}
+
+.tw {
+  color: hsl(203, 89%, 53%);
+}
+
+.ins {
+  border: 0;
+  height: 4px;
+  background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.yb {
+  color: hsl(348, 97%, 39%);
+}
+
+.today-num {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgb(39, 178, 145);
+}
+
+.trangle-up {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px;
+  border-color:  transparent transparent rgb(39, 178, 145) transparent;
+  font-size: 0;
+  line-height: 0;
+}
+
+.trangle-down {
+  margin-right: 4px;
+  margin-top: 4px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px;
+  border-color:  rgb(207, 67, 80) transparent transparent transparent;
+  font-size: 0;
+  line-height: 0;
+}
+
+.down {
+  color: rgb(207, 67, 80);
+}
+
+.media-box {
+  flex: 1;
+  margin-right: 20px;
+  height: 220px;
+  border-radius: 4px;
+  /* background-color: rgb(37, 43, 67); */
+}
+
+.media-info {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* color: rgb(137, 147, 183); */
+}
+
+.media-info svg {
+  margin-right: 10px;
+}
+
+.follower-num {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* color: #fff; */
+}
+
+.follower-num h2 {
+  font-size: 50px;
+}
+
+.follower-num h5 {
+  margin-top: 5px;
+  /* color: rgb(137, 147, 183); */
+  letter-spacing: .3em;
+}
+
+.cards {
+  margin-bottom: 20px;
+}
+
+.card-hd {
+  margin-bottom: 20px;
+  /* color: #fff; */
+}
+
+.card-bd {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 240px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  /* background-color: rgb(37, 43, 67); */
+  font-weight: 700;
+}
+
+.card-info,
+.change-num {
+  display: flex;
+  justify-content: space-between;
+}
+
+.change-num svg {
+  margin-bottom: 20px;
+}
+
+.change-num h2 {
+  color: #fff;
+  /* font-size: 30px; */
+}
+
+.card-info h5 {
+  margin-bottom: 20px;
+  color: rgb(137, 147, 183);
+}
+
+.change-percent {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: rgb(39, 178, 145);
+}

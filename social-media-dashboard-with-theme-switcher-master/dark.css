@@ -1,0 +1,31 @@
+body,
+.media-box,
+.card {
+  background-color: rgb(32, 34,47);
+}
+
+header {
+  color: #fff;
+}
+
+.header-l h4 {
+  margin-top: 10px;
+  color: rgb(143, 149, 183);
+  font-size: 14px;
+}
+
+.media-info svg {
+  margin-right: 10px;
+}
+
+.follower-num,
+.card-hd,
+.change-num h2 {
+  color: #fff;
+}
+
+.media-info,
+.follower-num h5,
+.card-info h5 {
+  color: rgb(137, 147, 183);
+}

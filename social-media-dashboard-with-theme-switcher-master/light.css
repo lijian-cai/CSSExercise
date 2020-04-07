@@ -1,0 +1,30 @@
+.media-box,
+.card {
+  background-color: rgb(240, 243, 250);
+}
+
+header {
+  background-color: rgb(248,249,254);
+}
+
+.header-l h3 {
+  color: rgb(22, 22, blue)32
+}
+
+.header-l h4 {
+  margin-top: 10px;
+  color: rgb(101, 103, 118);
+  font-size: 14px;
+}
+
+.card-hd {
+  color: rgb(107, 109, 124)
+}
+
+.card-info h5 {
+  color: rgb(100, 103, 122)
+}
+
+.change-num h2 {
+  color: rgb(26, 29, 36)
+}
