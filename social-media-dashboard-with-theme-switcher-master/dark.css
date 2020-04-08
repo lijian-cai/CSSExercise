@@ -1,6 +1,4 @@
-body,
-.media-box,
-.card {
+body {
   background-color: rgb(32, 34,47);
 }
 
@@ -12,6 +10,11 @@ header {
   margin-top: 10px;
   color: rgb(143, 149, 183);
   font-size: 14px;
+}
+
+.media-box,
+.card {
+  background-color: rgb(37, 43, 67);
 }
 
 .media-info svg {

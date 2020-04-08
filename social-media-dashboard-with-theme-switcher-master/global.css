@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+html {
+  font-size: 14px;
+}
+
 @font-face {
   font-family: 'Inter';
   src: url('./fonts/Inter-VariableFont_slnt\,wght.ttf');
@@ -24,7 +28,7 @@
   float: right;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   height: 135px;
@@ -32,7 +36,6 @@ header {
 }
 
 .header-l {
-  float: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +47,6 @@ header {
 /* switch button */
 
 .switch-mode {
-  float: right;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -118,6 +120,7 @@ input:checked + .slider:before {
 
 .boxes {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
@@ -283,4 +286,38 @@ input:checked + .slider:before {
   justify-content: flex-end;
   align-items: flex-end;
   color: rgb(39, 178, 145);
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .container,
+  .w {
+    margin: 0 auto;
+    width: 375px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .header {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .header-l {
+    width: 100%;
+    height: 60%;
+    border-bottom: solid 1px rgb(137, 140, 157);
+  }
+  .switch-mode {
+    height: 30%;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .boxes {
+    flex-direction: column;
+  }
+  .media-box,
+  .card {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }
